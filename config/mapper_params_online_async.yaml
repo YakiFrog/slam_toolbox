@@ -24,8 +24,8 @@ slam_toolbox:
 
     debug_logging: false  # デバッグログを有効にするか
     throttle_scans: 0  # スキャンデータのスロットル値（1秒あたりに処理するスキャン数）
-    transform_publish_period: 0.01  # オドメトリの変換を発行する周期（秒）（デフォルト：0.02秒）
-    map_update_interval: 1.5  # マップ更新のインターバル（秒）（デフォルト：５秒 -> 3 -> 1.5 -> ✕1.0（テレオペで停止したりする））
+    transform_publish_period: 0.02  # オドメトリの変換を発行する周期（秒）（デフォルト：0.02秒）0.02 -> 0.01
+    map_update_interval: 3.0  # マップ更新のインターバル（秒）（デフォルト：５秒 -> 3 -> 1.5 -> ✕1.0（テレオペで停止したりする））
     resolution: 0.05  # 地図の解像度（メートル単位）
     min_laser_range: 0.0  # 最小レーザー範囲（ラスター化するための設定）
     max_laser_range: 100.0  # 最大レーザー範囲（ラスター化するための設定）
